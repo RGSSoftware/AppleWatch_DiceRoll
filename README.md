@@ -4,5 +4,5 @@ Dice Roll for Apple Watch is a game that can be use by anybody at any age. If yo
 
 Dice Roll is a great “starter kit” for a Apple Watch games.
 
-Developed with Swift
-Ready for 38mm and 42mm screens
+ - Developed with Swift
+ - Ready for 38mm and 42mm screens
