@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dice_Roll" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-5Q-Wxb">
+                                <rect key="frame" x="16" y="20" width="568" height="65"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bZZ-h4-yHl">
+                                        <rect key="frame" x="511" y="17" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.0" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="twoDiceValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="swg-py-u5A"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2 Dice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWX-rB-SQu">
+                                        <rect key="frame" x="8" y="20" width="125" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="Qop-sl-Znn"/>
+                                            <constraint firstAttribute="width" constant="88" id="muu-Iy-A88"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="muu-Iy-A88"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13256448412698407" green="0.13256448412698407" blue="0.13256448412698407" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bZZ-h4-yHl" firstAttribute="top" secondItem="lOX-5Q-Wxb" secondAttribute="top" constant="17" id="5JF-aQ-9Er"/>
+                                    <constraint firstItem="bZZ-h4-yHl" firstAttribute="top" secondItem="VWX-rB-SQu" secondAttribute="top" constant="-5" id="7EH-um-dA4"/>
+                                    <constraint firstAttribute="width" constant="568" id="9po-rr-ON5"/>
+                                    <constraint firstItem="VWX-rB-SQu" firstAttribute="leading" secondItem="lOX-5Q-Wxb" secondAttribute="leading" constant="8" id="IW8-kk-RXv"/>
+                                    <constraint firstAttribute="height" constant="65" id="MZl-jV-BPm"/>
+                                    <constraint firstItem="VWX-rB-SQu" firstAttribute="top" secondItem="lOX-5Q-Wxb" secondAttribute="top" constant="17" id="STd-Pg-GWd"/>
+                                    <constraint firstItem="VWX-rB-SQu" firstAttribute="top" secondItem="lOX-5Q-Wxb" secondAttribute="top" constant="20" id="acr-fm-ZX3"/>
+                                    <constraint firstAttribute="trailing" secondItem="bZZ-h4-yHl" secondAttribute="trailing" constant="8" id="by6-zM-0Sk"/>
+                                    <constraint firstItem="VWX-rB-SQu" firstAttribute="leading" secondItem="lOX-5Q-Wxb" secondAttribute="leading" constant="8" id="rBG-9V-THg"/>
+                                    <constraint firstAttribute="height" constant="65" id="wud-06-GBJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9po-rr-ON5"/>
+                                        <exclude reference="MZl-jV-BPm"/>
+                                        <exclude reference="IW8-kk-RXv"/>
+                                        <exclude reference="STd-Pg-GWd"/>
+                                        <exclude reference="7EH-um-dA4"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice01" translatesAutoresizingMaskIntoConstraints="NO" id="uX9-B7-PJN">
+                                <rect key="frame" x="183" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="R2x-jX-K90"/>
+                                    <constraint firstAttribute="width" constant="100" id="fJV-PO-LDQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfa-tZ-9nH">
+                                <rect key="frame" x="16" y="532" width="568" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0LD-1f-y0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="roll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SbP-bW-gv4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice06" translatesAutoresizingMaskIntoConstraints="NO" id="b72-xr-aGD">
+                                <rect key="frame" x="313" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YRF-ql-GMO"/>
+                                    <constraint firstAttribute="height" constant="100" id="afH-9G-aj4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jfa-tZ-9nH" secondAttribute="bottom" constant="8" id="5PI-O4-72X"/>
+                            <constraint firstAttribute="centerY" secondItem="uX9-B7-PJN" secondAttribute="centerY" id="6nj-3X-ZXl"/>
+                            <constraint firstItem="lOX-5Q-Wxb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7hT-rC-VbX"/>
+                            <constraint firstAttribute="centerY" secondItem="b72-xr-aGD" secondAttribute="centerY" id="Df2-9R-krz"/>
+                            <constraint firstItem="lOX-5Q-Wxb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Gk8-qS-Cpd"/>
+                            <constraint firstItem="lOX-5Q-Wxb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JVA-GK-o8s"/>
+                            <constraint firstAttribute="centerX" secondItem="uX9-B7-PJN" secondAttribute="centerX" constant="67" id="KNd-gV-Pcf"/>
+                            <constraint firstAttribute="centerX" secondItem="jfa-tZ-9nH" secondAttribute="centerX" id="P6n-dE-xXo"/>
+                            <constraint firstAttribute="centerX" secondItem="uX9-B7-PJN" secondAttribute="centerX" constant="67" id="Xb0-9d-eZ4"/>
+                            <constraint firstItem="lOX-5Q-Wxb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="agd-Uy-lBJ"/>
+                            <constraint firstItem="b72-xr-aGD" firstAttribute="leading" secondItem="uX9-B7-PJN" secondAttribute="trailing" constant="30" id="dCa-k1-qeQ"/>
+                            <constraint firstItem="lOX-5Q-Wxb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="e0V-CI-JJ2"/>
+                            <constraint firstItem="lOX-5Q-Wxb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ulu-tL-p2p"/>
+                            <constraint firstItem="jfa-tZ-9nH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w5V-jh-IO5"/>
+                            <constraint firstAttribute="centerX" secondItem="b72-xr-aGD" secondAttribute="centerX" constant="-56" id="xL4-kE-zAo"/>
+                            <constraint firstItem="jfa-tZ-9nH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xfC-KH-eMk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="agd-Uy-lBJ"/>
+                                <exclude reference="e0V-CI-JJ2"/>
+                                <exclude reference="ulu-tL-p2p"/>
+                                <exclude reference="KNd-gV-Pcf"/>
+                                <exclude reference="xL4-kE-zAo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="firstDiceImage" destination="uX9-B7-PJN" id="w0z-pT-uaI"/>
+                        <outlet property="secondDiceImage" destination="b72-xr-aGD" id="lLm-zf-WEi"/>
+                        <outlet property="twoDiceSwitch" destination="bZZ-h4-yHl" id="pvi-qv-Wbi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice01" width="97" height="100"/>
+        <image name="dice06" width="96" height="100"/>
+    </resources>
+</document>

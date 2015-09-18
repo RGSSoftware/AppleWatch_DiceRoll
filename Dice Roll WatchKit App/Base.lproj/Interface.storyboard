@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yPl-7s-jAe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="5Dm-6B-5RL">
+            <objects>
+                <controller id="yPl-7s-jAe" customClass="InterfaceController" customModule="Dice_Roll_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="WaY-rM-Kmx">
+                            <items>
+                                <switch width="1" alignment="left" value="YES" title="2 Dice" id="pKd-Zn-JOL">
+                                    <fontDescription key="font" type="system" pointSize="27"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" red="0.0" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="didChangeValue:" destination="yPl-7s-jAe" id="GNL-Ii-Xc8"/>
+                                    </connections>
+                                </switch>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Roll" id="k37-8F-DY8">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="29"/>
+                            <connections>
+                                <action selector="roll" destination="yPl-7s-jAe" id="O7z-B2-OUi"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="67" alignment="center" verticalAlignment="center" id="CvL-c9-IZ4">
+                            <items>
+                                <imageView width="60" height="60" alignment="center" verticalAlignment="center" image="dice01" id="inD-Bh-GA7"/>
+                                <imageView width="60" height="60" alignment="center" verticalAlignment="center" image="dice06" id="nlA-oe-Pob"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="firstDiceImage" destination="inD-Bh-GA7" id="MAa-F0-f5T"/>
+                        <outlet property="secondDiceImage" destination="nlA-oe-Pob" id="Yzq-RU-aVU"/>
+                        <outlet property="twoDiceSwitch" destination="pKd-Zn-JOL" id="NpN-Wo-F2T"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="432" y="237"/>
+        </scene>
+    </scenes>
+</document>
